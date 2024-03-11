@@ -29,7 +29,7 @@ public class JdbcController {
 	/**
 	 * Simply selects the index view to render by returning its name.
 	 */
-	@RequestMapping(value = "/was/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/was", method = RequestMethod.GET)
 	public String index(Locale locale, Model model) {
 		logger.info("index page");
 		return "index";

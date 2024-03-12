@@ -128,7 +128,7 @@ public class JdbcController {
 	/**
 	 * monitoring
 	 */
-	@RequestMapping(value = "monitoring", method = RequestMethod.POST)
+	@RequestMapping(value = "monitoring", method = {RequestMethod.GET, RequestMethod.POST})
 	public ModelAndView monitoring(HttpServletRequest request) {	
 		ModelAndView mav = new ModelAndView();
 		String error = null;
